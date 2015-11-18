@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:id="@+id/root_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <view
+        android:id="@+id/game_view"
+        class="dental.beam.openglsamplegame.GameGLSurfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"/>
+
+    <TextView
+        android:id="@+id/asteroid_count_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="@dimen/asteroid_text_size"
+        android:text="100"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:id="@+id/asteroid_icon"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/asteroid"
+        android:layout_alignTop="@+id/asteroid_count_text"
+        android:layout_alignBottom="@+id/asteroid_count_text"
+        android:layout_toLeftOf="@+id/asteroid_count_text"
+        android:layout_marginRight="5dp"
+        android:visibility="invisible"
+        />
+
+</RelativeLayout>
+
+
